@@ -1,4 +1,4 @@
-package com.msb.webapi.user.Models;
+package com.msb.webapi.User.Models;
 
 import lombok.Builder;
 import lombok.Getter;

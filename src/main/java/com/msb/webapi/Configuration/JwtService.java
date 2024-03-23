@@ -1,4 +1,4 @@
-package com.msb.webapi.Config;
+package com.msb.webapi.Configuration;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -18,12 +18,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class JwtService {
-
     @Value("${application.security.jwt.secret-key}")
     private String secretKey;
     @Value("${application.security.jwt.expiration}")
     private long jwtExpiration;
-    @Value("${application.security.jwt.refresh-JwtToken.expiration}")
+    @Value("${application.security.jwt.refresh-token.expiration}")
     private long refreshExpiration;
 
     public String extractUsername(String token) {
@@ -82,16 +81,21 @@ public class JwtService {
 
     private Claims extractAllClaims(String token) {
         return Jwts
-                .parser()
-                .setSigningKey(secretKey)
+                .parserBuilder()
+                .setSigningKey(getSignInKey())
+                .build()
                 .parseClaimsJws(token)
                 .getBody();
+
+        //return jwts.
+        // parser().
+        // setSigningKey(secretKey).
+        // parseClaimsJws(token).
+        // getBody();
     }
 
- private Key getSignInKey() {
-      byte[] keyBytes = Decoders.BASE64.decode(secretKey);
-       return Keys.hmacShaKeyFor(keyBytes);
-  }
-
-
+    private Key getSignInKey() {
+        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
+        return Keys.hmacShaKeyFor(keyBytes);
+    }
 }

@@ -1,0 +1,38 @@
+version: '3.8'
+
+#Ref: https://medium.com/@saygiligozde/using-docker-compose-with-spring-boot-and-postgresql-235031106f9f
+
+#Docker-Compose Container name
+name: microservice_containers
+services:
+  app:
+    #image: name of image file given while creating Docker image
+    image: 'spring_jwt_authenticator:latest'
+
+    #[HOST_PORT]:[CONTAINER_PORT]
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+    container_name: spring_jwt_authenticator
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/inventory
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=swordfish
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+
+  db:
+    image: 'postgres:16.2-alpine'
+    container_name: postgresql
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=swordfish
+      - POSTGRES_DB=inventory
+
+    #[HOST_PORT]:[CONTAINER_PORT]
+    ports:
+      - "9999:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data

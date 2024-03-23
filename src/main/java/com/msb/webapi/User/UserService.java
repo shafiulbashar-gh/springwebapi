@@ -1,7 +1,7 @@
-package com.msb.webapi.user;
+package com.msb.webapi.User;
 
-import com.msb.webapi.user.Models.ChangePasswordRequest;
-import com.msb.webapi.user.Models.User;
+import com.msb.webapi.User.Models.ChangePasswordRequest;
+import com.msb.webapi.User.Models.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;

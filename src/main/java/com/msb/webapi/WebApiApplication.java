@@ -7,11 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 //@EnableJpaAuditing(auditorAwareRef = "auditorAware")
 
-public class SampleServiceApplication {
+public class WebApiApplication {
 
     public static void main(String[] args)
     {
-        SpringApplication.run(SampleServiceApplication.class, args);
+        SpringApplication.run(WebApiApplication.class, args);
     }
   /*
 

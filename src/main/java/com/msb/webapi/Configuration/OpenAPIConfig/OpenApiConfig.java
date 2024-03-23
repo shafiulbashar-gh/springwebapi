@@ -1,4 +1,4 @@
-package com.msb.webapi.Config.OpenAPIConfig;
+package com.msb.webapi.Configuration.OpenAPIConfig;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
@@ -22,7 +22,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
                 ),
                 license = @License(
                         name = "MIT Licence",
-                        url = "https://github.com/shafiulbashar-gh/code-examples/blob/master/LICENSE"
+                        url = "https://github.com/shafiulbashar-gh/springwebapi/blob/master/LICENSE"
 
                 ),
                 termsOfService = "Terms of service"
@@ -34,7 +34,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
                 ),
                 @Server(
                         description = "PROD ENV",
-                        url = "https://xyz.com/services"
+                        url = "https://springwebapi.com/services"
                 )
         },
         security = {

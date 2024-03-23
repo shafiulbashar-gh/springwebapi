@@ -1,7 +1,7 @@
 package com.msb.webapi.auditing;
 
 import java.util.Optional;
-import com.msb.webapi.user.Models.User;
+import com.msb.webapi.User.Models.User;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

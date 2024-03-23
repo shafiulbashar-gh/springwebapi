@@ -1,6 +1,7 @@
-package com.msb.webapi.user;
+package com.msb.webapi.User;
 
-import com.msb.webapi.user.Models.User;
+
+import com.msb.webapi.User.Models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

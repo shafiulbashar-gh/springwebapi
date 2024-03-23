@@ -1,6 +1,6 @@
-package com.msb.webapi.user;
+package com.msb.webapi.User;
 
-import com.msb.webapi.user.Models.Permission;
+import com.msb.webapi.User.Models.Permission;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.msb.webapi.user.Models.Permission.*;
+import static com.msb.webapi.User.Models.Permission.*;
 
 @RequiredArgsConstructor
 public enum Role {

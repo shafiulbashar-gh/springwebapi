@@ -1,4 +1,4 @@
-package com.msb.webapi.token;
+package com.msb.webapi.JwtToken;
 
 public enum TokenType {
   BEARER

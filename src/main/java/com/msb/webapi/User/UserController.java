@@ -1,6 +1,6 @@
-package com.msb.webapi.user;
+package com.msb.webapi.User;
 
-import com.msb.webapi.user.Models.ChangePasswordRequest;
+import com.msb.webapi.User.Models.ChangePasswordRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PatchMapping;

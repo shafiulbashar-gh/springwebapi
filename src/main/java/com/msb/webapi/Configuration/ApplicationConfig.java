@@ -1,8 +1,9 @@
-package com.msb.webapi.Config;
+package com.msb.webapi.Configuration;
 
 
+
+import com.msb.webapi.User.UserRepository;
 import com.msb.webapi.auditing.ApplicationAuditAware;
-import com.msb.webapi.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

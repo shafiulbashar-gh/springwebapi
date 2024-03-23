@@ -1,6 +1,6 @@
-package com.msb.webapi.token;
+package com.msb.webapi.JwtToken;
 
-import com.msb.webapi.token.Models.Token;
+import com.msb.webapi.JwtToken.Models.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

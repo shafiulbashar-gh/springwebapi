@@ -1,8 +1,9 @@
-package com.msb.webapi.user.Models;
+package com.msb.webapi.User.Models;
 
 
-import com.msb.webapi.token.Models.Token;
-import com.msb.webapi.user.Role;
+
+import com.msb.webapi.JwtToken.Models.Token;
+import com.msb.webapi.User.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

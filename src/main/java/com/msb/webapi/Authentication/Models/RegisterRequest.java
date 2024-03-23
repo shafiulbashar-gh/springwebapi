@@ -1,7 +1,7 @@
 package com.msb.webapi.Authentication.Models;
 
 
-import com.msb.webapi.user.Role;
+import com.msb.webapi.User.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

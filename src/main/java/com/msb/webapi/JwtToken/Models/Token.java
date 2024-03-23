@@ -1,7 +1,7 @@
-package com.msb.webapi.token.Models;
+package com.msb.webapi.JwtToken.Models;
 
-import com.msb.webapi.token.TokenType;
-import com.msb.webapi.user.Models.User;
+import com.msb.webapi.JwtToken.TokenType;
+import com.msb.webapi.User.Models.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

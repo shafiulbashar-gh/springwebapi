@@ -1,4 +1,4 @@
-package com.msb.webapi.Config;
+package com.msb.webapi.Configuration;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
